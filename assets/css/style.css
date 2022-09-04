@@ -11,13 +11,17 @@ body
     background: white;
     height: 100vh;
 }
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
 header .navbar
 {
     background: black;
     box-sizing: border-box;
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -54,7 +58,8 @@ header .logo img
 }
 .sns 
 {
-    position: absolute;
+    position: fixed;
+    z-index: 50;
     box-sizing: border-box;
     top: 50%;
     right: 30px;
@@ -66,20 +71,13 @@ header .logo img
     padding: 20px 20px;
     flex-wrap: wrap;
 }
-.group-profile img
-{
-    position: relative;
-    display: block;
-    padding: 150px 20px 10px;
-    align-items: center;
+.sns li {
+    padding: 20px 0;
 }
-.group-profile p
-{
-    color: black;
-    padding-left: 20px;
+.group-profile {
+    display: flex;
+    flex-direction: row;
 }
-
-
 footer
 {
     background: rgb(242, 219, 219);
