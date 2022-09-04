@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body 
+{
+    background: white;
+    height: 100vh;
+}
+header .navbar
+{
+    background: black;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+header .logo img
+{
+    position: relative;
+    cursor: pointer;
+    width: 120px;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+}
+.navbar .links
+{
+    margin: 0 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    padding: 20px 20px;
+}
+.navbar .links a
+{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 20px;
+}
+.sns 
+{
+    position: absolute;
+    box-sizing: border-box;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 20px 20px;
+    flex-wrap: wrap;
+}
+.group-profile img
+{
+    position: relative;
+    display: block;
+    padding: 150px 20px 10px;
+    align-items: center;
+}
+.group-profile p
+{
+    color: black;
+    padding-left: 20px;
+}
+
+
+footer
+{
+    background: rgb(242, 219, 219);
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    align-items: center;
+    padding: 1rem;
+    color: black;
+    text-align: center;
+    font-weight: 400;
+}
+footer .copyright
+{
+    min-height: calc(100vh -120px);
+}
